@@ -5,20 +5,20 @@
 class Lisa < Formula
   desc "tmux orchestrator for Claude/Codex AI agent sessions."
   homepage "https://github.com/bma-d/lisa"
-  version "1.1.2"
+  version "1.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bma-d/lisa/releases/download/v1.1.2/lisa_1.1.2_darwin_amd64.tar.gz"
-      sha256 "5b6a74f33059142b0fc3462a0dc10ebb95075d189fb8ac22252044bb492388bd"
+      url "https://github.com/bma-d/lisa/releases/download/v1.2.0/lisa_1.2.0_darwin_amd64.tar.gz"
+      sha256 "caafacc8aeec675c9c09a9862987efa3d444567597a5ccb85b23cae603882454"
 
       def install
         bin.install "lisa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bma-d/lisa/releases/download/v1.1.2/lisa_1.1.2_darwin_arm64.tar.gz"
-      sha256 "8a133acc87f4353c1b23d240cd7081c00965d919ffa9968390d3d2d834947628"
+      url "https://github.com/bma-d/lisa/releases/download/v1.2.0/lisa_1.2.0_darwin_arm64.tar.gz"
+      sha256 "acf51a1fceb124d833588411dbd22df17cc34c7d7e1eed0fbcb3fbb3eaa77489"
 
       def install
         bin.install "lisa"
@@ -28,15 +28,15 @@ class Lisa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bma-d/lisa/releases/download/v1.1.2/lisa_1.1.2_linux_amd64.tar.gz"
-      sha256 "fc15d412aeba499c3867c2d609fa7a930173f20c83891db2a3348ad17c6b03d5"
+      url "https://github.com/bma-d/lisa/releases/download/v1.2.0/lisa_1.2.0_linux_amd64.tar.gz"
+      sha256 "138da32295d29c5388b1d22c2ffc974da14e92a38568a8c4736eb04c3a30fcfd"
       def install
         bin.install "lisa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bma-d/lisa/releases/download/v1.1.2/lisa_1.1.2_linux_arm64.tar.gz"
-      sha256 "f1a5811721f820e9e80589bb12129bb2c2b71a2add71b059c936e178189afe02"
+      url "https://github.com/bma-d/lisa/releases/download/v1.2.0/lisa_1.2.0_linux_arm64.tar.gz"
+      sha256 "2f84593f1fe53b9c7dee7fae215f4bdd0735d404c0f4683dd57efdd16c8e2842"
       def install
         bin.install "lisa"
       end
