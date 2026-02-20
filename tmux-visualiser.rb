@@ -5,20 +5,20 @@
 class TmuxVisualiser < Formula
   desc "Live tmux session visualiser for your terminal."
   homepage "https://github.com/bma-d/tmux-visualiser"
-  version "1.1.0"
+  version "1.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bma-d/tmux-visualiser/releases/download/v1.1.0/tmux-visualiser_1.1.0_darwin_amd64.tar.gz"
-      sha256 "5d2af87068df5148275e18bde57bd30f2c03e419b18c9ad3af9f67e48239d361"
+      url "https://github.com/bma-d/tmux-visualiser/releases/download/v1.2.0/tmux-visualiser_1.2.0_darwin_amd64.tar.gz"
+      sha256 "508d8e461546830c7be9f8c85f918237a5308b3b81f530ae05658d94a678e4da"
 
       def install
         bin.install "tmux-visualiser"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bma-d/tmux-visualiser/releases/download/v1.1.0/tmux-visualiser_1.1.0_darwin_arm64.tar.gz"
-      sha256 "fa2cc20a8281d29d40abeb89a358b986c7b3eaf4f30a5809b36e4b77ab37b6a5"
+      url "https://github.com/bma-d/tmux-visualiser/releases/download/v1.2.0/tmux-visualiser_1.2.0_darwin_arm64.tar.gz"
+      sha256 "9b0453c6398f5c25cd54c15146256080b2317fdbcad6dbdf4a6689fd8f4de06d"
 
       def install
         bin.install "tmux-visualiser"
@@ -28,15 +28,15 @@ class TmuxVisualiser < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bma-d/tmux-visualiser/releases/download/v1.1.0/tmux-visualiser_1.1.0_linux_amd64.tar.gz"
-      sha256 "17ac8efda0b9636cf29b661fb726fc89b34c3a0aa5c5c00c4dd73b5f7b1789b8"
+      url "https://github.com/bma-d/tmux-visualiser/releases/download/v1.2.0/tmux-visualiser_1.2.0_linux_amd64.tar.gz"
+      sha256 "408ed23096599c71b976ae4148a21ec266ff0299bf6453c67c9fe3537eed3597"
       def install
         bin.install "tmux-visualiser"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bma-d/tmux-visualiser/releases/download/v1.1.0/tmux-visualiser_1.1.0_linux_arm64.tar.gz"
-      sha256 "6dc167dd222e7fd26c0f432e19a7ba2f66c4aaac28f8778beba265b1d8a6e82d"
+      url "https://github.com/bma-d/tmux-visualiser/releases/download/v1.2.0/tmux-visualiser_1.2.0_linux_arm64.tar.gz"
+      sha256 "09551f46246065827e905c205537e3d2c1b1a39ec90b40fabce29d7ede9bed61"
       def install
         bin.install "tmux-visualiser"
       end
