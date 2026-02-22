@@ -5,22 +5,22 @@
 class Lisa < Formula
   desc "tmux orchestrator for Claude/Codex AI agent sessions."
   homepage "https://github.com/bma-d/lisa"
-  version "1.3.0"
+  version "1.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bma-d/lisa/releases/download/v1.3.0/lisa_1.3.0_darwin_amd64.tar.gz"
-      sha256 "95ba06fd1426df439eedf0d1afe323cdf69307ccdda3a3b6ea6e09e37998b961"
+      url "https://github.com/bma-d/lisa/releases/download/v1.4.0/lisa_1.4.0_darwin_amd64.tar.gz"
+      sha256 "818e598c730ca463b13c7df2221bdfbfe57f76e3fd94d248658ef3fed2d5e38a"
 
-      def install
+      define_method(:install) do
         bin.install "lisa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bma-d/lisa/releases/download/v1.3.0/lisa_1.3.0_darwin_arm64.tar.gz"
-      sha256 "ee57cfd79bf65788cb1b4a0efd59e37fa6653c39f93d162bce32ca46d8f370b4"
+      url "https://github.com/bma-d/lisa/releases/download/v1.4.0/lisa_1.4.0_darwin_arm64.tar.gz"
+      sha256 "7a8b4c92f87d4d2b2c2017c50fae11f188e524c73a414cb1c9b51a664a72589a"
 
-      def install
+      define_method(:install) do
         bin.install "lisa"
       end
     end
@@ -28,16 +28,16 @@ class Lisa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bma-d/lisa/releases/download/v1.3.0/lisa_1.3.0_linux_amd64.tar.gz"
-      sha256 "767af5cd221867686dbe1121101fd9766d27f85d8ea63fc0a2a9aae8775558ce"
-      def install
+      url "https://github.com/bma-d/lisa/releases/download/v1.4.0/lisa_1.4.0_linux_amd64.tar.gz"
+      sha256 "e264c0112d97f6d313beb0a5e18d52422461e25acf6423f187b63d41bfb165b8"
+      define_method(:install) do
         bin.install "lisa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bma-d/lisa/releases/download/v1.3.0/lisa_1.3.0_linux_arm64.tar.gz"
-      sha256 "affc461a7d05bc1960e12a59389d13f38d5fafcd4c1e31d2e0ba533f0ed18003"
-      def install
+      url "https://github.com/bma-d/lisa/releases/download/v1.4.0/lisa_1.4.0_linux_arm64.tar.gz"
+      sha256 "6e759b0fbdc3f41b5c5b914d66ff162b5107c71298c93ab15986cf85d936f565"
+      define_method(:install) do
         bin.install "lisa"
       end
     end
