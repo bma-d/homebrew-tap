@@ -5,20 +5,20 @@
 class Lisa < Formula
   desc "tmux orchestrator for Claude/Codex AI agent sessions."
   homepage "https://github.com/bma-d/lisa"
-  version "1.4.3"
+  version "2.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bma-d/lisa/releases/download/v1.4.3/lisa_1.4.3_darwin_amd64.tar.gz"
-      sha256 "b0f7f758670ac7f79cfffaab6256202b2f4576163c449d40f9bdc8ac21efc719"
+      url "https://github.com/bma-d/lisa/releases/download/v2.0.0/lisa_2.0.0_darwin_amd64.tar.gz"
+      sha256 "937ed33d79ad048ff5bc4482b80899aff24724d0f553183d44946c4691cd34da"
 
       define_method(:install) do
         bin.install "lisa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bma-d/lisa/releases/download/v1.4.3/lisa_1.4.3_darwin_arm64.tar.gz"
-      sha256 "9e6c707c04678d335fba3ad66355ef5552b9b4621092e2c3d5c88be45904485b"
+      url "https://github.com/bma-d/lisa/releases/download/v2.0.0/lisa_2.0.0_darwin_arm64.tar.gz"
+      sha256 "5486e85f10bfe7d59b5b148b2d82d410f619d1fea910ad139a0d79a00f771c63"
 
       define_method(:install) do
         bin.install "lisa"
@@ -28,15 +28,15 @@ class Lisa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bma-d/lisa/releases/download/v1.4.3/lisa_1.4.3_linux_amd64.tar.gz"
-      sha256 "4864a7e09c8da76fbeaac504071703b20d07cf6edd1f7b8cac9e9b92df534a04"
+      url "https://github.com/bma-d/lisa/releases/download/v2.0.0/lisa_2.0.0_linux_amd64.tar.gz"
+      sha256 "658cb85418ab7dce1027d30322a9c538c989d2b7a85747a4cb60f88513647484"
       define_method(:install) do
         bin.install "lisa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bma-d/lisa/releases/download/v1.4.3/lisa_1.4.3_linux_arm64.tar.gz"
-      sha256 "6c670fb8febd40562aca2cda2dcaa11653ebef96a1e2ebb0a30e8d1787b11674"
+      url "https://github.com/bma-d/lisa/releases/download/v2.0.0/lisa_2.0.0_linux_arm64.tar.gz"
+      sha256 "64c38f1b3561c478da0fe75f889731e045b170c24d517591756d4963d178e7e3"
       define_method(:install) do
         bin.install "lisa"
       end
